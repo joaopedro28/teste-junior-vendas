@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "name": "Home",
+        "link": "/",
+        "target":""
+    },
+    {
+        "id":1,
+        "name": "Home",
+        "link": "#item2",
+        "target":""
+    },
+    {
+        "id":1,
+        "name": "Menu",
+        "link": "#item3",
+        "target":""
+    },
+    {
+        "id":1,
+        "name": "Menu",
+        "link": "#item4",
+        "target":""
+    },
+    {
+        "id":5,
+        "name": "Contato",
+        "link": "/",
+        "target":""
+    }
+]

@@ -1,0 +1,38 @@
+{   
+    "id":23,
+    "title":"lorem ipsum dolor sit amet",
+    "uptitle":"lorem ipsum dolor",
+    "text":"<p>lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor</p>",
+    "items":[
+        {
+            "id":123,
+            "title": "Titulo do banner",
+            "description": "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+            "image": "https://picsum.photos/300/500?random=1"
+        },
+        {
+            "id":112,
+            "title": "Titulo do banner",
+            "description": "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+            "image": "https://picsum.photos/200/300?random=1"
+        },
+        {
+            "id":152,
+            "title": "Titulo do banner",
+            "description": "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+            "image": "https://picsum.photos/200/300?random=1"
+        },
+        {
+            "id":122,
+            "title": "Titulo do banner",
+            "description": "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+            "image": "https://picsum.photos/200/600?random=1"
+        },
+        {
+            "id":143,
+            "title": "Titulo do banner",
+            "description": "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+            "image": "https://picsum.photos/200/400?random=1"
+        }
+    ]
+}

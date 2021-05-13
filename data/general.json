@@ -1,0 +1,13 @@
+{
+    "data": {
+        "default":{
+            "logo":"/img/logo.png",
+            "copyrights":"@Vnda - tecnologia para empresas -",
+            "CNPJ": "000.0000.000/0001-00"
+        },
+        "medias_sociais":{
+            "facebook":"https://facebook.com",
+            "instagram":""
+        }
+    }
+}

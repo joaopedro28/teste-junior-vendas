@@ -1,0 +1,24 @@
+{
+  "name": "vndas",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.1",
+    "core-js": "^3.9.1",
+    "gulp": "^4.0.2",
+    "nuxt": "^2.15.3",
+    "swiper": "^5.4.5",
+    "vue-awesome-swiper": "^4.1.1"
+  },
+  "devDependencies": {
+    "gulp-sass": "4.1.0",
+    "gulp-sourcemaps": "3.0.0",
+    "gulp-watch": "5.0.1"
+  }
+}

@@ -1,0 +1,31 @@
+{   
+    "id":23,
+    "title":"lorem ipsum dolor sit amet",
+    "uptitle":"lorem ipsum dolor",
+    "text":"<p>lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor</p>",
+    "image": "https://picsum.photos/200/300?random=1",
+    "button": "Call-to-action",
+    "link_button":"/produto-3",
+    "gallery":[
+        {
+            "id":513,
+            "title": "Titulo do banner",
+            "image": "https://picsum.photos/300/500?random=1"
+        },
+        {
+            "id":562,
+            "title": "Titulo do banner",
+            "image": "https://picsum.photos/200/300?random=1"
+        },
+        {
+            "id":532,
+            "title": "Titulo do banner",
+            "image": "https://picsum.photos/200/300?random=1"
+        },
+        {
+            "id":542,
+            "title": "Titulo do banner",
+            "image": "https://picsum.photos/200/600?random=1"
+        }
+    ]
+}
