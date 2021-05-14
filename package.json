@@ -13,6 +13,7 @@
     "core-js": "^3.9.1",
     "gulp": "^4.0.2",
     "nuxt": "^2.15.3",
+    "nuxt-webfontloader": "^1.1.0",
     "swiper": "^5.4.5",
     "vue-awesome-swiper": "^4.1.1"
   },

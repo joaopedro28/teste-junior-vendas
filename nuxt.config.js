@@ -38,8 +38,13 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    'nuxt-webfontloader',
   ],
-
+  webfontloader: {
+    google: {
+      families: ['PT+Sans:400,700'] //Loads Lato font with weights 400 and 700
+    }
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 

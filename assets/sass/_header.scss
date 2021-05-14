@@ -1,18 +1,48 @@
 header {
-    background-color: $color_primary;
+    background-color: $color_secondary;
 }
-.my_nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 25px 0;
+.my_nav {
+
+    padding: 25px;
+    background-color: $color_secondary;
+    .brand_logo {
+        height: 50px;
+        width: auto;
+    }
     .menu {
-        ul {
-            display: flex;
-            list-style: none;
-            li{
-                margin: 0 5px;
-            }
+        display: flex;
+        @media (max-width: $breakpoint-tablet) {
+            ul {
+                display: none;
+            }               
+        }
+        @media (min-width: $breakpoint-tablet) {
+            ul {
+                display: flex;
+                list-style: none;
+                li {
+                    margin: 0 5px;
+                    a {
+                        cursor: pointer;
+                        font-size: 18px;
+                        padding: 0 5px;
+                        width: fit-content;
+                        text-transform: uppercase;
+                        &:hover {
+                            font-weight: 700;
+                            color: $color_third;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    .my_icons {
+        img {
+            margin: 0 5px;
+            width: 40px;
+            height: auto;
+            cursor: pointer;
         }
     }
 }

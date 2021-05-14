@@ -1,27 +1,33 @@
 <template>
     <div >
         <header >
-            <nav class="my_nav container">
-                <div>
-                    logo
+            <nav class="container display-flex row justify-content-between my_nav">
+                <div class="brand_logo">
+                    <img class="image-fluid" :src="general.default.logo" :alt="general.default.title" :title="general.default.title" >
                 </div>
-                <div>
+                <div class="display-flex">
                     <Menu />
                 </div>
-                <div>
-                    lupa user e carrinho
+                <div class="display-flex">
+                    <div class="align-self-center">
+                        <div class="display-flex row my_icons">
+                            <img src="img/lupa.png" alt="Busca" title="Busca">
+                            <img src="img/user.png" alt="Minha conta" title="Minha conta">
+                            <img src="img/cart.png" alt="Carrinho" title="Carrinho">
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>
         <main>
             <section>
-                <Banner/>
+                <Banner />
             </section>
             <section class="container">
-                <CircleBanner/>
+                <CircleBanner />
             </section>
             <section>
-                
+                <Highlights />
             </section>
             <section>
                 
@@ -33,77 +39,6 @@
         <footer>
 
         </footer>
-
-  <div class="container">
-    
-
-
-    <div class="grid">
-      <div class="grid__item grid__item--xs-span-1">
-        xs-1
-      </div>
-      <div class="grid__item grid__item--xs-span-2">
-        xs-2
-      </div>
-      <div class="grid__item grid__item--xs-span-3">
-        xs-3
-      </div>
-      <div class="grid__item grid__item--xs-span-6">
-        xs-6
-      </div>
-    </div>
-
-    <div class="grid">
-      <div class="grid__item grid__item--md-span-4">
-        md-4
-      </div>
-      <div class="grid__item grid__item--md-span-4">
-        md-4
-      </div>
-      <div class="grid__item grid__item--md-span-4">
-        md-4
-      </div>
-    </div>
-
-    <div class="grid">
-      <div class="grid__item grid__item--sm-span-1">
-        sm-1
-      </div>
-      <div class="grid__item grid__item--sm-span-1">
-        sm-1
-      </div>
-      <div class="grid__item grid__item--sm-span-1">
-        sm-1
-      </div>
-      <div class="grid__item grid__item--sm-span-1">
-        sm-1
-      </div>
-      <div class="grid__item grid__item--sm-span-1">
-        sm-1
-      </div>
-      <div class="grid__item grid__item--sm-span-1">
-        sm-1
-      </div>
-      <div class="grid__item grid__item--sm-span-1">
-        sm-1
-      </div>
-      <div class="grid__item grid__item--sm-span-1">
-        sm-1
-      </div>
-      <div class="grid__item grid__item--sm-span-4">
-        sm-4
-      </div>
-      <div class="grid__item grid__item--sm-span-1">
-        sm-1
-      </div>
-      <div class="grid__item grid__item--sm-span-1">
-        sm-1
-      </div>
-      <div class="grid__item grid__item--sm-span-12">
-        sm-12
-      </div>
-      </div>
-        </div>
     </div>
 </template>
 
@@ -111,13 +46,20 @@
 import Menu from '~/components/Menu.vue'
 import Banner from '~/components/Banner.vue'
 import CircleBanner from '~/components/CircleBanner.vue'
+import Highlights from '~/components/Highlights.vue'
+import general from '~/data/general.json'
 
 export default {
     components:{
         Menu,
         Banner,
-        CircleBanner
+        CircleBanner,
+        Highlights
+    },
+    data(){
+        return{
+            general: general.data
+        }
     }
-
 }
 </script>

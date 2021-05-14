@@ -1,17 +1,14 @@
-$color_primary: #F6F6F6;
-$breakpoints: (
-  xs: 32rem,
-  sm: 48rem,
-  md: 72rem,
-  lg: 96rem,
-  xl: 102rem,
-  xx: 120rem
-);
+//Config
 $max-page-width:1440px;
-@mixin break($size) {  
-  @media (min-width: map-get($breakpoints, $size)) {
-    @content;
-  }
-}
+$font-primary: 'PT Sans';
 
-$items: 12;
+
+$breakpoint-desktop: 1200px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 576px;
+
+//Colors
+$color_primary: #F6F6F6;
+$color_secondary: #F5EED9;
+$color_third: #272727;
+

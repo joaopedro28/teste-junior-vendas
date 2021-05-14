@@ -1,11 +1,15 @@
 <template>
     <div class="banner">
-        <swiper ref="mySwiper" :options="swiperOptions">
+        <swiper ref="mySwiper" :options="BannerPrimary">
             <swiper-slide v-for="item in itens" :key="item.id">
-                <img :src="item.image" :alt="item.name">
+                <div class="aspect-ratio ratio-21-9">
+                    <div class="aspect-content">
+                        <img  class="object-fit-cover" :src="item.image" :alt="item.name">
+                    </div>
+                </div>
             </swiper-slide>
-            
-            <div class="swiper-pagination" slot="pagination"></div>
+            <div class="swiper-button-prev" slot="button-prev"></div>
+            <div class="swiper-button-next" slot="button-next"></div>
         </swiper>
     </div>
 </template>
@@ -15,8 +19,8 @@ import 'swiper/css/swiper.min.css'
 import BannerItens from '~/data/block1.json'
 export default {
     components: {
-    Swiper,
-    SwiperSlide
+        Swiper,
+        SwiperSlide
     },
     directives: {
         swiper: directive
@@ -24,9 +28,10 @@ export default {
     data() {
         return {
             itens: BannerItens,
-            swiperOptions: {
-                pagination: {
-                    el: '.swiper-pagination'
+            BannerPrimary: {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
                 }
             }
         }
