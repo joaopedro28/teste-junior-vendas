@@ -1,42 +1,34 @@
 <template>
     <div class="highlights">
-        <div class="container">
+        <div class="container display-flex column">
             <div class="display-flex row w-100">
-                <div class="w-20">
-                    <div class="display-flex column">
-                        <div class="uptitle">
-                            {{content.uptitle}}
-                        </div>
-                        <div class="title">
-                            {{content.title}}
-                        </div>
-                        <div class="text">
-                            {{content.uptitle}}
-                        </div>
-                    </div>
-                </div>
-            
+                <TextInfo :content="content" class="text_block w-20" />
                 <div class="position-relative w-80" >
-                    <SlidersCards :items="content.items" />
+                    <Cards :items="content.items" ref="cards"/>
                 </div>
             </div>
+            <div class="arrow">
+                <img src="img/arrowdown.png" alt="Para baixo!"  title="Para baixo!">
+            </div>
+
         </div>
     </div>
 </template>
 <script>
 import content from '~/data/block3.json'
-// import TextInfo from '~/components/TextInfo.vue '
-import SlidersCards from "~/components/SlidersCards .vue" 
+import TextInfo from '~/components/TextInfo.vue'
+import Cards from "~/components/Cards .vue" 
 
 export default {
     components: {
-        // TextInfo
-        SlidersCards 
+        TextInfo,
+        Cards 
     },
     data(){
         return {
             content,
         }
-    }
+    }, 
+    
 }
 </script>

@@ -1,31 +1,34 @@
 {   
     "id":23,
-    "title":"lorem ipsum dolor sit amet",
-    "uptitle":"lorem ipsum dolor",
-    "text":"<p>lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor</p>",
+    "title":"Lorem ipsum dolor sit amet",
+    "uptitle":"Lorem ipsum dolor",
+    "text":"<p>Lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor</p>",
     "image": "https://picsum.photos/200/300?random=1",
     "button": "Call-to-action",
     "link_button":"/produto-3",
-    "gallery":[
+    "items":[
         {
             "id":513,
             "title": "Titulo do banner",
-            "image": "https://picsum.photos/300/500?random=1"
+            "image": "https://picsum.photos/300/500?random=1",
+            "description": "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
         },
         {
             "id":562,
             "title": "Titulo do banner",
-            "image": "https://picsum.photos/200/300?random=1"
+            "image": "https://picsum.photos/200/300?random=1",
+            "description": "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
         },
         {
             "id":532,
             "title": "Titulo do banner",
-            "image": "https://picsum.photos/200/300?random=1"
+            "image": "https://picsum.photos/200/300?random=1",
+            "description": "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
         },
         {
             "id":542,
             "title": "Titulo do banner",
-            "image": "https://picsum.photos/200/600?random=1"
+            "image": "https://picsum.photos/200/500?random=1"
         }
     ]
 }

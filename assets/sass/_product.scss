@@ -1,0 +1,14 @@
+.product_bg {
+    background:$color_primary;
+    width: 75%;
+    position: absolute;
+    top: 0;
+    height: 500px;
+    z-index: -1;
+}
+.product {
+    position: relative;
+    padding: 90px 0 80px 0;
+    margin: 300px 0 100px 0;
+    background-color: transparent;
+}

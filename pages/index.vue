@@ -30,10 +30,10 @@
                 <Highlights />
             </section>
             <section>
-                
+                <Product />
             </section>
             <section>
-                
+                <InstaBlock />
             </section>
         </main>
         <footer>
@@ -47,14 +47,19 @@ import Menu from '~/components/Menu.vue'
 import Banner from '~/components/Banner.vue'
 import CircleBanner from '~/components/CircleBanner.vue'
 import Highlights from '~/components/Highlights.vue'
+import Product from '~/components/Product.vue'
+
 import general from '~/data/general.json'
+import InstaBlock from '../components/InstaBlock.vue'
 
 export default {
     components:{
         Menu,
         Banner,
         CircleBanner,
-        Highlights
+        Highlights,
+        Product,
+        InstaBlock
     },
     data(){
         return{

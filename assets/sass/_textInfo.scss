@@ -1,0 +1,46 @@
+.text_info{
+    img {
+        margin-right: 40px;
+    }
+    .uptitle{
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0 0 30px 0;
+    }
+    .title{
+        font-size: 42px;
+        font-weight: 700;
+    }
+    .text{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .button {
+        background-color: #000;
+        border-radius: 5px;
+        padding: 15px 40px;
+        text-align: center;
+        margin: 25px 0;
+        width: fit-content;
+        transition: 0.5s;
+        &:after{
+            content: '\003E';
+            color: $color_secondary;
+        }
+        &:hover {
+            background-color: $color_secondary;
+            a{
+                color: $color_third
+            }
+            &:after{
+                content: '\003E';
+                color: $color_third;
+            }
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    }
+}

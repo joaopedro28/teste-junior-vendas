@@ -1,18 +1,24 @@
 <template>
-    <div class=" circleBanner">
+    <div class="container insta_block">
+        <div class="title">
+            {{content.title}}
+        </div>
         <swiper ref="mySwiper" :options="swiperOption">
-            <swiper-slide v-for="item in itens" :key="item.id">
-                <div class="item">
-                    <img class="item-img" :src="item.image" :alt="item.name">
-                </div>                
+            <swiper-slide class="images" v-for="(item, index) in content.items" :key="item.id" :class="(index+1) % 2 == 0 ? 'odd' : ''">
+                <img :src="item.image" :alt="item.title" >
+                <div class="hidden_text">
+                    <div class="text" v-html="item.text">
+
+                    </div>
+                </div>
             </swiper-slide>
         </swiper>
     </div>
 </template>
 <script>
+import content from '~/data/block5.json'
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.min.css'
-import CircleBanner from '~/data/block2.json'
 export default {
     components: {
         Swiper,
@@ -23,28 +29,26 @@ export default {
     },
     data() {
         return {
-            itens: CircleBanner,
+            content,
             swiperOption: {
+                slidesPerView: 3,
+                spaceBetween: 50,
                 loop: true,
                 autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false
+                    delay: 5000,
+                    disableOnInteraction: true
                 },
                 breakpoints: {
                     1440: {
-                        slidesPerView: 6,
-                        spaceBetween: 30,
-                        },
-                    1200: {
-                        slidesPerView: 4,
-                        spaceBetween: 30
+                        slidesPerView: 3,
+                        spaceBetween: 50,
                         },
                     768: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                         spaceBetween: 20
                         },
                     576: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                         spaceBetween: 20
                         },
                     320: {
@@ -54,6 +58,6 @@ export default {
                 }
             }
         }
-    },
+    }
 }
 </script>

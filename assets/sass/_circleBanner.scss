@@ -1,8 +1,8 @@
 .circleBanner {
     margin: 100px ;
     .item {
-        width: 200px;
-        height: 200px;
+        max-width: 150px;
+        height: 150px;
     }
     .item-img{
         object-fit: cover;

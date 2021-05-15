@@ -1,11 +1,11 @@
 <template>
     <div class="card_item w-80">
-        <img :src="item.image" :alt="item.title">
         <div class="text_box">
+            <img :src="item.image" :alt="item.title">
             <h4>
                 {{item.title}}
             </h4>
-            <p class="uptitle">
+            <p class="text">
                 {{item.description}}
             </p>
         </div>
