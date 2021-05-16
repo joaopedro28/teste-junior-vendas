@@ -3,7 +3,9 @@
         <header >
             <nav class="container display-flex  justify-content-between my_nav">
                 <div class="brand_logo">
-                    <img class="image-fluid" :src="general.default.logo" :alt="general.default.title" :title="general.default.title" >
+                    <nuxt-link to="/" >
+                        <img class="image-fluid" :src="general.default.logo" :alt="general.default.title" :title="general.default.title" >
+                    </nuxt-link>
                 </div>
                 <div class="display-flex">
                     <Menu />
