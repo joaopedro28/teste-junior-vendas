@@ -1,6 +1,6 @@
 <template>
     <div >
-        <header >
+        <header data-aos="fade-left" data-aos-offset="600" data-aos-easing="ease-in-sine">
             <nav class="container display-flex  justify-content-between my_nav">
                 <div class="brand_logo">
                     <nuxt-link to="/" >
@@ -22,23 +22,23 @@
             </nav>
         </header>
         <main>
-        <section>
+            <section data-aos="zoom-in" data-aos-duration="2500">
                 <Banner />
             </section>
-            <section class="container">
+            <section data-aos="zoom-in-up" data-aos-duration="2000" class="container">
                 <CircleBanner />
             </section>
-            <section>
+            <section data-aos="zoom-out-up" data-aos-duration="2500">
                 <Highlights />
             </section>
-            <section>
+            <section data-aos="zoom-in-right" data-aos-duration="2000">
                 <Product />
             </section>
-            <section>
+            <section data-aos="zoom-in-left" data-aos-duration="3000">
                 <InstaBlock />
             </section>
         </main> 
-        <footer>
+        <footer data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2500">
             <Footer :logo="general.default.logo" :copyright="general.default.copyright+general.default.CNPJ"/>
         </footer>
     </div>

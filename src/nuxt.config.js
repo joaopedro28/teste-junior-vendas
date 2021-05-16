@@ -25,7 +25,9 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/aos.js'
   ],
+    
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -41,6 +43,9 @@ export default {
     '@nuxtjs/axios',
     'nuxt-webfontloader',
   ],
+  purgeCSS: {
+    whitelist: ["aos-init", "aos-animate", "data-aos-delay", "data-aos-duration", "fade-up", "zoom-in"],
+  },
   webfontloader: {
     google: {
       families: ['PT+Sans:400,700'] //Loads Lato font with weights 400 and 700
