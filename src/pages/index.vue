@@ -22,7 +22,7 @@
             </nav>
         </header>
         <main>
-            <section data-aos="zoom-in" data-aos-duration="2500">
+            <section >
                 <Banner />
             </section>
             <section data-aos="zoom-in-up" data-aos-duration="2000" class="container">
