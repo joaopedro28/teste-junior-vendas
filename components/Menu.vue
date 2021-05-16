@@ -5,7 +5,7 @@
                 <a :src="item.link" >{{item.name}}</a>
             </li>
         </ul>
-        <div class="display-flex">
+        <div class="display-flex" v-if="$device.isMobileOrTablet">
             <img class="hamburguer" src="img/hamburguer.png" alt="menu" title="menu" @click="OpenMenu()">
             <div class="mobile_items" :class="active ? 'active' : ''">
                 <ul>
