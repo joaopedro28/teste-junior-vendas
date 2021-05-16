@@ -56,6 +56,33 @@ import Footer from '~/components/Footer.vue'
 import general from '~/data/general.json'
 
 export default {
+    head() {
+        return {
+            title: this.general.default.title,
+            meta: [
+                {
+                    hid: `og:title`,
+                    property: 'og:title',
+                    content: this.general.default.title
+                },
+                {
+                    hid: `description`,
+                    name: 'description',
+                    content: 'Projeto feito para um teste de Frontend Júnior - João Pedro Rocha'
+                },
+                {
+                    hid: `og:description`,
+                    property: 'og:description',
+                    content: 'Projeto feito para um teste de Frontend Júnior - João Pedro Rocha'
+                },
+                {
+                    hid: `og:url`,
+                    property: `og:url`,
+                    content: this.$route.fullPath
+                }
+            ]
+        }
+    },
     components:{
         Menu,
         Banner,
