@@ -1,8 +1,11 @@
 .highlights {
     padding: 60px 0;
     background-color: $color_primary;
-    height: 600px;
-    margin-bottom: 500px;
+    @media (min-width: $breakpoint-tablet) {
+        height: 600px;
+        margin-bottom: 500px;
+    
+    }
     .text_block {
         padding: 80px 0;
     }
@@ -11,28 +14,6 @@
         top: 0;
         right: 0;
         width: 40%;
-    }
-    .card_item{
-        margin: 25px auto;
-        .text_box{
-            text-align: center;
-            background-color: $color_secondary;
-            width: 100%;
-            img{
-                width: 100%;
-                height: auto;
-            }
-            .text{
-                font-size: 14px;
-                font-weight: 400;
-                padding: 0 10px 30px 10px;
-            }
-            h4 {
-                padding: 15px 0;
-                font-size: 18px;
-                font-weight: 700;
-            }
-        }
     }
     .odd {
         position: absolute;
@@ -44,5 +25,32 @@
         width: 60px;
         height: 60px;
     }
+}
+.card_item{
+    margin: 25px auto;
+    .text_box{
+        text-align: center;
+        background-color: $color_secondary;
+        width: 100%;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .text{
+            font-size: 14px;
+            font-weight: 400;
+            padding: 0 10px 30px 10px;
+        }
+        h4 {
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
+.cards_slider {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 5px;
 }
 

@@ -1,0 +1,58 @@
+[
+    {
+        "id":1,
+        "name": "Menu",
+        "type":"subitems",
+        "subitems": [
+            {
+                "id":18,
+                "name": "Submenu",
+                "icon":"",
+                "link":""
+            },
+            {
+                "id":41,
+                "name": "Submenu",
+                "icon":"",
+                "link":""
+            },
+            {
+                "id":16,
+                "name": "Submenu",
+                "icon":"",
+                "link":""
+            },
+            {
+                "id":12,
+                "name": "Submenu",
+                "icon":"",
+                "link":""
+            }
+        ]
+    },
+    {
+        "id":13,
+        "name": "Menu",
+        "type":"form",
+        "subitems": []            
+    },
+    {
+        "id":12,
+        "name": "Menu",
+        "type":"subitems",
+        "subitems": [
+            {
+                "id":1,
+                "name": "Submenu",
+                "icon":"img/instagram.png",
+                "link":"https://instagram.com"
+            },
+            {
+                "id":1,
+                "name": "Submenu",
+                "icon":"img/facebook.png",
+                "link":"https://facebook.com"
+            }
+        ]
+    }
+]

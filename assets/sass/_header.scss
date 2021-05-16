@@ -2,7 +2,7 @@ header {
     background-color: $color_secondary;
 }
 .my_nav {
-
+    flex-direction: row;
     padding: 25px;
     background-color: $color_secondary;
     .brand_logo {
@@ -11,11 +11,6 @@ header {
     }
     .menu {
         display: flex;
-        @media (max-width: $breakpoint-tablet) {
-            ul {
-                display: none;
-            }               
-        }
         @media (min-width: $breakpoint-tablet) {
             ul {
                 display: flex;
@@ -35,6 +30,36 @@ header {
                     }
                 }
             } 
+        }
+        .hamburguer {
+            width: 40px;
+            height: auto;
+        }
+        .mobile_items {
+            visibility: hidden;
+            width: 100%;
+            background-color: $color_secondary;
+            position: absolute;
+            top: 98px;
+            height: auto;
+            z-index: 999;
+            left: 0;
+            &.active {
+                visibility: visible;
+            }
+            ul {
+                list-style: none;
+                li {
+                    margin: 10px 0;
+                    a {
+                        font-size: 18px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .my_icons {
+                padding-left: 40px;
+            }
         }
     }
     .my_icons {

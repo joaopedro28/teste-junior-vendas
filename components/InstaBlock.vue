@@ -35,8 +35,8 @@ export default {
                 spaceBetween: 50,
                 loop: true,
                 autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: true
+                    delay: 8000,
+                    disableOnInteraction: false
                 },
                 breakpoints: {
                     1440: {
@@ -49,11 +49,9 @@ export default {
                         },
                     576: {
                         slidesPerView: 1,
-                        spaceBetween: 20
                         },
                     320: {
                         slidesPerView: 1,
-                        spaceBetween: 10
                     }
                 }
             }

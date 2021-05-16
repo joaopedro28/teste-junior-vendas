@@ -1,14 +1,29 @@
 .product_bg {
     background:$color_primary;
-    width: 75%;
+    width: 100%;
     position: absolute;
     top: 0;
     height: 500px;
     z-index: -1;
+    @media (min-width: $breakpoint-tablet) {
+        width: 75%;
+    }
 }
 .product {
     position: relative;
     padding: 90px 0 80px 0;
-    margin: 300px 0 100px 0;
-    background-color: transparent;
+    background-color: $color_primary;
+    @media (min-width: $breakpoint-tablet) {
+        margin: 300px 0 100px 0;
+        background-color: transparent;
+    }
+}
+.slides_products {
+    width: 100%;
+    @media (min-width: $breakpoint-desktop) {
+        width: 40%;
+    }
+    @media (min-width: $breakpoint-tablet) and(max-width: $breakpoint-desktop) {
+        width: 50%;
+    }
 }

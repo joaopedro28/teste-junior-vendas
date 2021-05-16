@@ -1,14 +1,14 @@
 <template>
     <div >
         <header >
-            <nav class="container display-flex row justify-content-between my_nav">
+            <nav class="container display-flex  justify-content-between my_nav">
                 <div class="brand_logo">
                     <img class="image-fluid" :src="general.default.logo" :alt="general.default.title" :title="general.default.title" >
                 </div>
                 <div class="display-flex">
                     <Menu />
                 </div>
-                <div class="display-flex">
+                <div class="display-flex" v-if="$device.isDesktop">
                     <div class="align-self-center">
                         <div class="display-flex row my_icons">
                             <img src="img/lupa.png" alt="Busca" title="Busca">
@@ -20,7 +20,7 @@
             </nav>
         </header>
         <main>
-            <section>
+        <section>
                 <Banner />
             </section>
             <section class="container">
@@ -35,9 +35,9 @@
             <section>
                 <InstaBlock />
             </section>
-        </main>
+        </main> 
         <footer>
-
+            <Footer :logo="general.default.logo" :copyright="general.default.copyright+general.default.CNPJ"/>
         </footer>
     </div>
 </template>
@@ -48,9 +48,10 @@ import Banner from '~/components/Banner.vue'
 import CircleBanner from '~/components/CircleBanner.vue'
 import Highlights from '~/components/Highlights.vue'
 import Product from '~/components/Product.vue'
+import InstaBlock from '../components/InstaBlock.vue'
+import Footer from '~/components/Footer.vue'
 
 import general from '~/data/general.json'
-import InstaBlock from '../components/InstaBlock.vue'
 
 export default {
     components:{
@@ -59,7 +60,8 @@ export default {
         CircleBanner,
         Highlights,
         Product,
-        InstaBlock
+        InstaBlock,
+        Footer
     },
     data(){
         return{

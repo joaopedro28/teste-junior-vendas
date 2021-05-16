@@ -1,7 +1,7 @@
 <template>
     <div class="text_info display-flex row ">
-        <div v-if="content.image">
-            <img class="image-fluid" :src="content.image" :alt="content.uptitle" :title="content.uptitle">
+        <div class="image-fluid" v-if="content.image">
+            <img  :src="content.image" :alt="content.uptitle" :title="content.uptitle">
         </div>
         <div class="display-flex column">
             <div class="uptitle" v-if="content.uptitle">

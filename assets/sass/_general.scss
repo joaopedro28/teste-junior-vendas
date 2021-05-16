@@ -3,9 +3,9 @@
 *::after {
     box-sizing: border-box;
 }
-div, h1, h2, p, a {
+div, h1, h2, p, a, button {
     font-family: $font-primary;
-    color: #000;
+    color: $color_third;
 }
 .container {
     max-width:$max-page-width;
@@ -18,6 +18,9 @@ div, h1, h2, p, a {
         display: flex;
         &.row {
             flex-direction: row;
+            @media (max-width: $breakpoint-tablet) {
+                flex-direction: column;
+            }
         }
         &.column {
             flex-direction: column;
@@ -37,7 +40,7 @@ div, h1, h2, p, a {
         }
         &-between {
             justify-content: space-between;
-        }
+        } 
     }
 }
 .align {
@@ -76,6 +79,15 @@ div, h1, h2, p, a {
     &-20 {
         width: 20%;
     }
+    @media (max-width: $breakpoint-mobile) {
+        &-80,
+        &-60,
+        &-50,
+        &-40,
+        &-20 {
+            width: 100%;
+        }
+    }
 }
 .aspect-ratio {
     position: relative;
@@ -109,4 +121,8 @@ div, h1, h2, p, a {
 .image-fluid {
     width: auto;
     height: 100%;
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+    color: $color_third;
+    font-size: 30px !important;
 }

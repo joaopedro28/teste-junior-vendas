@@ -3,7 +3,7 @@
         <div class="container">
             <div class="display-flex row justify-content-between">
                 <TextInfo :content="content" class="w-50" />
-                <SlidesProducts :items="content.items" class="w-50" />
+                <SlidesProducts :items="content.items"  />
             </div>
             
         </div>

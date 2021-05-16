@@ -3,7 +3,10 @@
     .title {
         font-size: 28px;
         text-align: center;
-        margin-bottom: -30px;
+        margin-bottom: 30px;
+        @media (min-width: $breakpoint-tablet) {
+            margin-bottom: -30px;
+        }
     }
     .images {
         position: relative;
@@ -48,7 +51,10 @@
             }
         }
         &.odd{
-            margin-top: 100px;
+            margin-top:0;
+            @media (min-width: $breakpoint-tablet) {
+                margin-top: 100px;
+            }            
         }
     }
     .swiper-slide {
